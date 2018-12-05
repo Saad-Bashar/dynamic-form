@@ -104,7 +104,10 @@ class App extends Component {
     const { progress } = this.state;
     if(progress === 100) {
       return (
-        this.getResults()
+        <div className="result">
+          <h3>Success!</h3>
+          {this.getResults()}
+        </div>
       ); 
     }
     return (
